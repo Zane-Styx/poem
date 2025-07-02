@@ -34,7 +34,7 @@ function showPoem(i) {
   card.classList.remove('show');
 
   setTimeout(() => {
-    card.innerHTML = `<h2>${poem.title}</h2><p>${poem.text}</p>`;
+    card.innerHTML = `<h2>${poem.title}</h2><div class="poem-text"><p>${poem.text}</p></div>`;
     card.classList.add('show');
   }, 300);
 }
